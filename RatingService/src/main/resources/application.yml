@@ -7,7 +7,7 @@ spring:
       uri: mongodb://localhost:27017
       database: microservices
   application:
-    name: Rating-Service
+    name: RATING-SERVICE
 
 eureka:
   instance:
