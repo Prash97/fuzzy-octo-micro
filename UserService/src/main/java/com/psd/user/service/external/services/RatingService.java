@@ -4,7 +4,7 @@ import com.psd.user.service.entities.Rating;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
-@FeignClient(name = "RATINGSERVICE")
+@FeignClient(name = "RATING-SERVICE")
 public interface RatingService {
 
 

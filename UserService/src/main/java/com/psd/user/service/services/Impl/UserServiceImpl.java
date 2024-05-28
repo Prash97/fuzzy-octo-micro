@@ -54,7 +54,7 @@ public class UserServiceImpl implements UserService {
         //fetch rating of the above user for RATING SERVICE
         //http://localhost:8083/ratings/users/def9fa03-17ae-4f2a-b64d-9832f1e5beca
 
-        Rating[] ratingsOfUser = restTemplate.getForObject("http://RATINGSERVICE/ratings/users/" + user.getUserId(), Rating[].class);
+        Rating[] ratingsOfUser = restTemplate.getForObject("http://RATING-SERVICE/ratings/users/" + user.getUserId(), Rating[].class);
         logger.info("{} ",ratingsOfUser);
 
         List<Rating> ratings = Arrays.stream(ratingsOfUser).toList();
